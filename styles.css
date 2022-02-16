@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .container-fluid {
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  #loja {
+    border: 2px solid #d9bce2;
+    background: #ffffff;
+    padding: 12px 24px;
+    border-radius: 22px;
+    color: #cb94e4;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    pointer-events: visible;
+    vertical-align: middle;
+    }
+#loja:hover {
+    color: rgb(255, 202, 219);
+    border: 2px solid rgb(255, 202, 219);
+}
+  .texto {
+    padding-left: 50px;
+    margin-left: 80px;
+    margin-top: 150px;
+    margin-right: 80px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    }
+
+
+.queridos {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(360deg, rgb(250, 233, 229), #fff);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slow {
+  width: 100vw;
+  height: 90vh;
+  background-image: linear-gradient(180deg, rgb(250, 233, 229), #d9bce2);
+}
+
+.clientes {
+width: 100vw;
+height: 70vh;
+background-image: linear-gradient(360deg, rgb(250, 233, 229), #d9bce2);
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+  .card {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    display: inline-block;
+    margin: 30px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    text-align: left;
+    line-height: 1.4em;
+    font-size: 14px;
+    box-shadow: none !important;
+   
+    border-radius: 30px;
+  }
+  
+  .card * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+  
+  .card .profile-image img {
+    border-radius: 5px;
+    max-width: 100%;
+    height: 80px;
+    vertical-align: top;
+    float: left;
+  }
+  
+  .card figcaption {
+    width: 100%;
+    background-color: #d9bce2;
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    display: inline-block;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .card figcaption:after {
+    content: '';
+    position: absolute;
+    left: 32px;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #d9bce2 transparent transparent transparent;
+  }
+  
+  .card p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  } 
+  
+  .footer {
+
+    padding-top: 25px;
+    padding-bottom: 20px;
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+  }
+  
+   .flip-container {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-container:hover .flipper{
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .back{
+    transform: rotateY(180deg);
+  }
+  
+
+  
